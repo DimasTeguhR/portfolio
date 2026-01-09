@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Data Analyst & Machine Learning Enthusiast Portfolio - Skilled in Python, SQL, Tableau, and advanced analytics">
+    <meta name="keywords" content="Data Analyst, Machine Learning, Python, SQL, Portfolio">
+    <title>Dimas Teguh Ramadhani | Data Analyst & ML Enthusiast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-text">Dimas</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg-pattern"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">👋 Welcome to my portfolio</div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Dimas Teguh Ramadhani</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="typing-text" id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Passionate about transforming complex data into actionable insights.
+                    Specializing in Python, SQL, Machine Learning, and Data Visualization.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> View Projects
+                    </a>
+                    <a href="assets/resume.pdf" class="btn btn-secondary" id="download-cv"
+                        download="Dimas_Teguh_Ramadhani_Resume.pdf">
+                        <i class="fas fa-download"></i> Download CV
+                        <span class="download-count" id="download-count">0</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">85%</span>
+                        <span class="stat-label">Avg. Model Accuracy</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1+ Years</span>
+                        <span class="stat-label">Professional Experience</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <div class="image-glow"></div>
+                    <div class="profile-placeholder" style="border: none; background: transparent; padding: 0;">
+                        <img src="assets/profile.jpg" alt="Dimas Teguh Ramadhani"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="floating-badge badge-1">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="floating-badge badge-3">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Turning Data Into <span class="gradient-text">Insights</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="about-text">
+                        I'm a fresh graduate <strong>Informatics Engineering</strong> student at
+                        <strong>Telkom University Purwokerto</strong> with a stellar GPA of <strong>3.93</strong>.
+                        My passion lies in uncovering patterns within data and building intelligent solutions
+                        that drive business decisions.
+                    </p>
+                    <p class="about-text">
+                        With experience in <strong>15+ complex data analysis projects</strong> achieving an
+                        average accuracy of <strong>85%</strong>, I specialize in sentiment analysis,
+                        classification models, and IoT data analytics.
+                    </p>
+                    <div class="education-card">
+                        <div class="edu-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="edu-content">
+                            <h4>Telkom University Purwokerto</h4>
+                            <p>Bachelor of Informatics Engineering</p>
+                            <span class="edu-gpa">GPA: 3.93 / 4.00</span>
+                        </div>
+                    </div>
+                    <div class="education-card">
+                        <div class="edu-icon" style="background: transparent;">
+                            <img src="assets/bangkitlogo.png" alt="Bangkit Academy"
+                                style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                        <div class="edu-content">
+                            <h4>Bangkit Academy</h4>
+                            <p>Machine Learning Path</p>
+                            <span class="edu-gpa">Final Score : 90.3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-container">
+                    <h3 class="skills-title">Technical Skills</h3>
+                    <div class="skill-category">
+                        <h4><i class="fas fa-code"></i> Programming</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4><i class="fas fa-database"></i> Databases</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">BigQuery</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4><i class="fas fa-brain"></i> Machine Learning</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Regression</span>
+                            <span class="skill-tag">Classification</span>
+                            <span class="skill-tag">NLP</span>
+                            <span class="skill-tag">Computer Vision</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4><i class="fas fa-chart-bar"></i> Data Visualization</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Tableau</span>
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag">Excel</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4><i class="fab fa-git-alt"></i> Tools</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">Jupyter</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">Click on a project to explore the methodology, analysis, and results</p>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="nlp">NLP</button>
+                <button class="filter-btn" data-filter="iot">IoT</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1: Sentiment Analysis -->
+                <div class="project-card" data-category="nlp ml" data-project="sentiment">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-view">View Details <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                        <img src="assets/sentiment.png" alt="Sentiment Analysis Project"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag tag-ml">Machine Learning</span>
+                            <span class="tag tag-nlp">NLP</span>
+                        </div>
+                        <h3 class="project-title">Sentiment Analysis - Wisata Brebes</h3>
+                        <p class="project-desc">Analyzing tourist reviews using SVM classification with 87% accuracy</p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">87%</span>
+                                <span class="metric-label">Accuracy</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">SVM</span>
+                                <span class="metric-label">Algorithm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: PALE IoT -->
+                <div class="project-card" data-category="iot ml" data-project="pale">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-view">View Details <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                        <img src="assets/pale.png" alt="PALE IoT Project"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag tag-iot">IoT</span>
+                            <span class="tag tag-ml">Machine Learning</span>
+                        </div>
+                        <h3 class="project-title">PALE - Pantau Lele</h3>
+                        <p class="project-desc">IoT-based catfish monitoring system with real-time sensor data analytics
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">Real-time</span>
+                                <span class="metric-label">Monitoring</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">3</span>
+                                <span class="metric-label">Sensors</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: E-Commerce Classification -->
+                <div class="project-card" data-category="ml nlp" data-project="ecommerce">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-view">View Details <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                        <img src="assets/ecommerce.png" alt="E-Commerce Classification Project"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag tag-ml">Machine Learning</span>
+                            <span class="tag tag-nlp">Text Classification</span>
+                        </div>
+                        <h3 class="project-title">E-Commerce Text Classification</h3>
+                        <p class="project-desc">Automated product categorization using text classification algorithms
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">85%+</span>
+                                <span class="metric-label">Accuracy</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Multi</span>
+                                <span class="metric-label">Class</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Career</span>
+                <h2 class="section-title">Experience & <span class="gradient-text">Certifications</span></h2>
+            </div>
+            <div class="experience-grid">
+                <div class="experience-column">
+                    <h3 class="column-title"><i class="fas fa-briefcase"></i> Work Experience</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2023 - 2023</span>
+                                <h4>Laboratory Assistant</h4>
+                                <p>Assisted in data science and programming laboratory sessions, mentoring students in
+                                    Python and data analysis fundamentals.</p>
+                                <div class="timeline-tags">
+                                    <span>Teaching</span>
+                                    <span>Python</span>
+                                    <span>Data Science</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2024 - 2025</span>
+                                <h4>Freelance Data Analyst</h4>
+                                <p>Completed <strong>15+ complex projects</strong> with an average model accuracy of
+                                    <strong>85%</strong>. Specializing in data analysis, machine learning, and
+                                    visualization.
+                                </p>
+                                <div class="timeline-tags">
+                                    <span>Python</span>
+                                    <span>ML</span>
+                                    <span>SQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-column">
+                    <h3 class="column-title"><i class="fas fa-certificate"></i> Certifications</h3>
+                    <div class="certifications-grid">
+                        <div class="cert-card">
+                            <div class="cert-icon" style="background: transparent;">
+                                <img src="assets/bnsplogo.png" alt="BNSP"
+                                    style="width: 100%; height: 100%; object-fit: contain;">
+                            </div>
+                            <div class="cert-info">
+                                <h4>BNSP</h4>
+                                <p>Database Programmer "CDBPro"</p>
+                            </div>
+                            <a href="https://drive.google.com/file/d/1hAXVBNUl95Kf6irWUE7TaSpAx2rqWiRN/view"
+                                class="cert-link" title="View Certificate">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon" style="background: transparent;">
+                                <img src="assets/courseralogo.png" alt="Coursera"
+                                    style="width: 100%; height: 100%; object-fit: contain;">
+                            </div>
+                            <div class="cert-info">
+                                <h4>Machine Learning</h4>
+                                <p>Coursera Machine Learning Course Certificate</p>
+                            </div>
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/UKYHGVJCNBUZ?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=s12n"
+                                class="cert-link" title="View Certificate">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon" style="background: transparent;">
+                                <img src="assets/dqlablogo.png" alt="DQLab"
+                                    style="width: 100%; height: 100%; object-fit: contain;">
+                            </div>
+                            <div class="cert-info">
+                                <h4>DQLab</h4>
+                                <p>Data Analyst Certification</p>
+                            </div>
+                            <a href="https://academy.dqlab.id/Certificate_check/result/DQLABMBE1GVDRIN#mycertificate"
+                                class="cert-link" title="View Certificate">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                <p class="section-subtitle">I'm always open to discussing new projects and opportunities</p>
+            </div>
+            <div class="contact-grid">
+                <a href="https://wa.me/6285211778807" target="_blank" class="contact-card whatsapp">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h4>WhatsApp</h4>
+                    <p>Quick chat</p>
+                </a>
+                <a href="https://linkedin.com/in/dimasteguhramadhani" target="_blank" class="contact-card linkedin">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <h4>LinkedIn</h4>
+                    <p>Professional network</p>
+                </a>
+                <a href="mailto:dimasteguhr@gmail.com" class="contact-card email">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h4>Email</h4>
+                    <p>Send a message</p>
+                </a>
+                <a href="https://github.com/DimasTeguhR" target="_blank" class="contact-card github">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h4>GitHub</h4>
+                    <p>View my code</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Dimas Teguh Ramadhani. All rights reserved.</p>
+                <p class="footer-tagline">Built with <i class="fas fa-heart"></i> and lots of data</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal" id="project-modal">
+            <button class="modal-close" id="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-content" id="modal-content">
+                <!-- Dynamic content loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
