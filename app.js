@@ -357,6 +357,46 @@ function initProjectModal() {
                 }
             ],
             paperUrl: 'https://drive.google.com/file/d/1-KUVfWqGX9_ueImu_IzigzJQkNUNFANL/view?usp=sharing'
+        },
+        gardashboard: {
+            title: 'GAR Dashboard with Power BI',
+            subtitle: 'Sales Monitoring Dashboard - PT Smart TBK (Internship)',
+            sections: [
+                {
+                    title: 'Project Overview',
+                    icon: 'fa-info-circle',
+                    content: `This dashboard was developed during my internship at PT Smart TBK (Sinar Mas Agribusiness and Food). 
+                              It provides a comprehensive view of sales performance for CPO (Crude Palm Oil) and PK (Palm Kernel) products.
+                              <strong>Note:</strong> The data presented in this portfolio is dummy data generated for demonstration purposes, 
+                              as the actual internship data is confidential.`
+                },
+                {
+                    title: 'Key Features',
+                    icon: 'fa-list-ul',
+                    content: `<ul>
+                                <li><strong>Sales Tracking:</strong> Real-time monitoring of CPO and PK sales volume and revenue.</li>
+                                <li><strong>Trend Analysis:</strong> Visualizing sales trends over time to identify seasonal patterns.</li>
+                                <li><strong>Regional Performance:</strong> Breakdown of sales by region and distribution channels.</li>
+                                <li><strong>Target vs Actual:</strong> KPI indicators for monthly and quarterly targets.</li>
+                              </ul>`
+                },
+                {
+                    title: 'Dashboard Gallery',
+                    icon: 'fa-images',
+                    type: 'gallery',
+                    images: [
+                        { src: 'assets/gardashboard1.png', caption: 'Executive Summary View' },
+                        { src: 'assets/gardashboard2.png', caption: 'Detailed Sales Analysis' }
+                    ]
+                },
+                {
+                    title: 'Tools & Technologies',
+                    icon: 'fa-tools',
+                    content: `<strong>Power BI:</strong> For dashboard creation and interactivity<br>
+                              <strong>SQL Server:</strong> Data extraction and querying<br>
+                              <strong>Excel:</strong> Data preprocessing and cleaning`
+                }
+            ]
         }
     };
 
