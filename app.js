@@ -74,9 +74,9 @@ function initTypingEffect() {
     const typingElement = document.getElementById('typing-text');
     const phrases = [
         'Data Analyst',
-        'Machine Learning Enthusiast',
-        'Python Developer',
-        'Data Visualization Expert'
+        'Business Intelligence',
+        'Power BI Developer',
+        'SQL, DAX, ETL'
     ];
     let phraseIndex = 0;
     let charIndex = 0;
